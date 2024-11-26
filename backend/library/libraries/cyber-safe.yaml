@@ -1,0 +1,619 @@
+urn: urn:intuitem:risk:library:CH-Cyber-Safe
+locale: fr
+ref_id: Cyber-Safe
+name: Cyber-Safe
+description: "Association Label  suisse cybers\xE9curit\xE9: Les exigences Cyber-Safe\
+  \ sont valables pour les organisations comprenant un maximum de 250\nemploy\xE9\
+  s. Les organisations ne r\xE9pondant pas \xE0 ces crit\xE8res restent n\xE9anmoins\
+  \ \xE9ligibles \xE0 l\u2019obtention du Label. Les exigences auxquelles elles doivent\
+  \ r\xE9pondre sont alors d\xE9finies sur mesure et dans le respect des principes\
+  \ du Label, par la commission de labellisation de l\u2019Association."
+copyright: 'CC BY-NC-SA 4.0 - Association Cyber-Safe: cyber-safe.ch'
+version: 3
+provider: Cyber-Safe
+packager: ICTrust
+objects:
+  framework:
+    urn: urn:intuitem:risk:framework:CH-Cyber-Safe
+    ref_id: Cyber-Safe
+    name: Cyber-Safe
+    description: "L\u2019association a d\xE9velopp\xE9 le Label cyber-safe.ch pour\
+      \ permettre aux PME et communes d\u2019atteindre un niveau de s\xE9curit\xE9\
+      \ informatique d\xE9fini comme acceptable par un ensemble de partenaires publics\
+      \ et priv\xE9s."
+    requirement_nodes:
+    - urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:cr
+      assessable: false
+      depth: 1
+      ref_id: CR
+      name: "Comp\xE9tences et responsabilit\xE9s"
+    - urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:cr.rh
+      assessable: false
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:cr
+      ref_id: CR.RH
+      name: 'Ressources humaines '
+    - urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:cr.rh-1
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:cr.rh
+      ref_id: CR.RH-1
+      description: "L\u2019organisation candidate doit avoir d\xE9sign\xE9 une personne\
+        \ de contact interne en charge des questions de l\u2019IT. Des comp\xE9tences\
+        \ et aptitudes sp\xE9cifiques (internes ou externes) sont disponibles pour\
+        \ ce point de contact."
+    - urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:cr.rh-2
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:cr.rh
+      ref_id: CR.RH-2
+      description: "Cat 4 :  L\u2019organisation candidate doit disposer d\u2019une\
+        \ personne de contact form\xE9e en informatique et avoir, au minimum, suivi\
+        \ une formation de sensibilisation \xE0 la cybers\xE9curit\xE9."
+    - urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:cr.rh-3
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:cr.rh
+      ref_id: CR.RH-3
+      description: "Cat 4 - Nb P\xE9riph 150: L\u2019organisation candidate doit disposer\
+        \ dans son comit\xE9 de direction d\u2019une personne responsable de la ybers\xE9\
+        curit\xE9. Cette personne doit au moins signer les documents suivants et ne\
+        \ peut d\xE9l\xE9guer cette obligation: \n- Inventaire des donn\xE9es (c.f.\
+        \ OG.IT-2)\n- Liste des permissions d'acc\xE8s (c.f. OG.RH-2)\n- Checklist\
+        \ \"R\xE9silience\" (c.f. OG.RS-3)"
+    - urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:cr.rh-4
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:cr.rh
+      ref_id: CR.RH-4
+      description: " La personne responsable de la cybers\xE9curit\xE9 doit avoir\
+        \ un acc\xE8s permanent \xE0 une liste \xE0 jour des permissions d'acc\xE8\
+        s\u200D."
+    - urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:cr.tp
+      assessable: false
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:cr
+      ref_id: CR.TP
+      name: 'Test de phishing '
+    - urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:cr.tp-desc-1
+      assessable: false
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:cr.tp
+      ref_id: CR.TP-desc-1
+      description: "L\u2019\xE9valuation des performances se base sur l\u2019envoi\
+        \ de courriels contenant des contenus\ndiff\xE9rents et envoy\xE9s \xE0 chaque\
+        \ adresse de courriel fournie, selon les r\xE8gles suivantes :\n\u2022 Chaque\
+        \ courriel envoy\xE9 contient au minimum un \xE9l\xE9ment permettant au\n\
+        collaborateur de constater qu\u2019il s\u2019agit d\u2019un courriel frauduleux.\n\
+        \u2022 Les courriels envoy\xE9s sont g\xE9n\xE9riques et facilement d\xE9\
+        tectables comme \xE9tant\nfrauduleux.\n\u2022 Au minimum 3 courriels sont\
+        \ envoy\xE9s \xE0 chaque adresse.\n\u2022 La p\xE9riode de test dure entre\
+        \ 2 et 6 semaines, selon le nombre d\u2019adresses.\n\u2022 Chaque courriel\
+        \ contient une image qui, une fois affich\xE9e, est comptabilis\xE9e dans\n\
+        les statistiques d'hame\xE7onnage.\n\u2022 Chaque courriel contient un lien\
+        \ qui, une fois cliqu\xE9, est comptabilis\xE9e dans les\nstatistiques d'hame\xE7\
+        onnage."
+    - urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:cr.tp-1
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:cr.tp
+      ref_id: CR.TP-1
+      description: "Le taux de clics moyen calcul\xE9 pour l'ensemble des courriels\
+        \ envoy\xE9s doit \xEAtre inf\xE9rieur \xE0 8.5 %."
+    - urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:cr.tp-2
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:cr.tp
+      ref_id: CR.TP-2
+      description: "Cat. 4: Le taux de clics moyen calcul\xE9 pour l'ensemble des\
+        \ courriels envoy\xE9s doit \xEAtre inf\xE9rieur \xE0 7.5 %."
+    - urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:cr.tp-3
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:cr.tp
+      ref_id: CR.TP-3
+      description: "Cat. 5: Le taux de clics moyen calcul\xE9 pour l'ensemble des\
+        \ courriels envoy\xE9s doit \xEAtre inf\xE9rieur \xE0 6 %."
+    - urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:cr.tp-4
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:cr.tp
+      ref_id: CR.TP-4
+      description: "La moyenne des t\xE9l\xE9chargements de contenu \xE0 distance\
+        \ pour tous les courriels envoy\xE9s doit \xEAtre inf\xE9rieure \xE0 25 %."
+    - urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:it
+      assessable: false
+      depth: 1
+      ref_id: IT
+      name: Infrastructure IT
+    - urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:it.in
+      assessable: false
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:it
+      ref_id: IT.IN
+      name: Inventaire
+    - urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:it.in-1
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:it.in
+      ref_id: IT.IN-1
+      description: "L\u2019organisation candidate doit maintenir \xE0 jour un inventaire\
+        \ exhaustif de l\u2019infrastructure TIC ainsi que de tous les \xE9l\xE9ments\
+        \ connect\xE9s sur le(s) r\xE9seau(x) de travail (PC, iMac, SmartPhone, tablette,\
+        \ objet internet, etc.)."
+    - urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:it.in-2
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:it.in
+      ref_id: IT.IN-2
+      description: "L\u2019organisation candidate doit maintenir \xE0 jour un inventaire\
+        \ exhaustif de ses donn\xE9es, y compris, le cas \xE9ch\xE9ant, pour l'OT.\
+        \ Chaque donn\xE9e de l'inventaire doit faire l'objet d'au moins une politique\
+        \ de fr\xE9quence de sauvegarde, de conservation et de test."
+    - urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:it.ch
+      assessable: false
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:it
+      ref_id: IT.CH
+      name: Chiffrement
+    - urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:it.ch-1
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:it.ch
+      ref_id: IT.CH-1
+      description: "Les canaux de communication depuis l\u2019ext\xE9rieur (y.c. VPN)\
+        \ sont chiffr\xE9s et contr\xF4l\xE9s au moins tous les 2 ans."
+    - urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:it.ch-2
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:it.ch
+      ref_id: IT.CH-2
+      description: "Cat. 4:Identifier quelles donn\xE9es doivent \xEAtre chiffr\xE9\
+        es (lors de la transmission et/ou lors du stockage) et s\u2019assurer de leur\
+        \ chiffrement."
+    - urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:it.ch-3
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:it.ch
+      ref_id: IT.CH-3
+      description: "Les donn\xE9es pr\xE9sentes sur les p\xE9riph\xE9riques mobiles\
+        \ (ordinateurs, SmartPhone, tablette, objet internet, etc.) sont syst\xE9\
+        matiquement chiffr\xE9es."
+    - urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:it.ch-4
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:it.ch
+      ref_id: IT.CH-4
+      description: "Tous les syst\xE8mes d'authentification accessibles publiquement\
+        \ doivent mettre en \u0153uvre l'authentification multifacteur (AMF) lorsqu'ils\
+        \ permettent l'acc\xE8s \xE0 des donn\xE9es sensibles, et au minimum pour\
+        \ le VPN, le RDP, le webmail, les services de partage de documents (p. ex.\
+        \ SharePoint)."
+    - urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:it.wi
+      assessable: false
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:it
+      ref_id: IT.WI
+      name: WiFi
+    - urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:it.wi-1
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:it.wi
+      ref_id: IT.WI-1
+      description: "Les r\xE9seaux WiFi doivent \xEAtre chiffr\xE9s (WPA2 au minimum)\
+        \ et prot\xE9g\xE9s par un mot de passe* (16 caract\xE8res minimum). (mot\
+        \ de passe par d\xE9faut exclu)"
+    - urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:it.wi-2
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:it.wi
+      ref_id: IT.WI-2
+      description: "Le r\xE9seau WiFi invit\xE9s doit \xEAtre s\xE9par\xE9 du r\xE9\
+        seau de travail."
+    - urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:it.wi-3
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:it.wi
+      ref_id: IT.WI-3
+      description: "Les appareils priv\xE9s ou les appareils non g\xE9r\xE9s par l'organisation\
+        \ doivent utiliser exclusivement le r\xE9seau WiFi invit\xE9s (sauf si les\
+        \ ppareils priv\xE9s sont autoris\xE9s sur d'autres r\xE9seaux WiFi et si\
+        \ les exigences correspondantes sont d\xE9finies dans la charte de l'utilisateur"
+    - urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:it.ph
+      assessable: false
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:it
+      ref_id: IT.PH
+      name: "Acc\xE8s Physique"
+    - urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:it.ph-1
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:it.ph
+      ref_id: IT.PH-1
+      description: "Toutes les installations h\xE9bergeant des donn\xE9es doivent\
+        \ \xEAtre s\xE9curis\xE9es contre les acc\xE8s physiques de personnes non\
+        \ autoris\xE9es."
+    - urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:it.ph-2
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:it.ph
+      ref_id: IT.PH-2
+      description: "L\u2019acc\xE8s au centre de calcul par des externes est contr\xF4\
+        l\xE9 (p.ex. liste avec les personnes qui acc\xE8dent, quand, de quel fournisseur,\
+        \ etc.)."
+    - urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:it.ph-3
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:it.ph
+      ref_id: IT.PH-3
+      description: "Lors de leur \xE9limination, tous les supports de donn\xE9es le\
+        \ sont en veillant \xE0 la destruction d\xE9finitive des donn\xE9es qui s\u2019\
+        y trouvent."
+    - urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:it.si
+      assessable: false
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:it
+      ref_id: IT.SI
+      name: Scan Interne
+    - urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:it.si-1
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:it.si
+      ref_id: IT.SI-1
+      description: "Aucune vuln\xE9rabilit\xE9 consid\xE9r\xE9e avec un score CVSS\
+        \ sup\xE9rieur ou \xE9gal \xE0 9,0 ne doit \xEAtre signal\xE9e par un scan\
+        \ depuis l'int\xE9rieur des r\xE9seaux de travail. Un h\xF4te pr\xE9sentant\
+        \ une vuln\xE9rabilit\xE9 avec un score CVSS sup\xE9rieur ou \xE9gal \xE0\
+        \ 9,0 ne peut \xEAtre tol\xE9r\xE9 que dans un r\xE9seau logique s\xE9par\xE9\
+        \ et sans acc\xE8s internet."
+    - urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:it.se
+      assessable: false
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:it
+      ref_id: IT.SE
+      name: Scan Externe
+    - urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:it.se-1
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:it.se
+      ref_id: IT.SE-1
+      description: "Aucune vuln\xE9rabilit\xE9 avec un score CVSS sup\xE9rieur ou\
+        \ \xE9gal \xE0 7,0 ne doit \xEAtre signal\xE9e par un scan des adresses IP\
+        \ publiques de l'infrastructure depuis l'ext\xE9rieur. Un h\xF4te publiquement\
+        \ accessible et pr\xE9sentant une vuln\xE9rabilit\xE9 avec un score CVSS sup\xE9\
+        rieur ou \xE9gal \xE0 7,0 et inf\xE9rieur \xE0 9,0 ne peut \xEAtre tol\xE9\
+        r\xE9 que lorsque qu\u2019une r\xE8gle de pare-feu en restreint l\u2019acc\xE8\
+        s en-dehors des zones g\xE9ographiques n\xE9cessaires \xE0 la bonne marche\
+        \ des affaires."
+    - urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:og
+      assessable: false
+      depth: 1
+      ref_id: OG
+      name: Organisation
+    - urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:og.pd
+      assessable: false
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:og
+      ref_id: OG.PD
+      name: "Protection des donn\xE9es"
+    - urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:og.pd-desc-1
+      assessable: false
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:og.pd
+      ref_id: OG.PD-desc-1
+      description: "Les principes en mati\xE8re de protection des donn\xE9es sont\
+        \ inclus dans la LPD (obligatoire pour toute entreprise en Suisse) ainsi que\
+        \ le RGPD, lorsqu\u2019il est applicable. Ces principes sont \xE9galement\
+        \ inclus dans le droit cantonal (obligatoire pour les entit\xE9s publiques),\
+        \ lorsqu'il est applicable."
+    - urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:og.pd-1
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:og.pd
+      ref_id: OG.PD-1
+      description: "L\u2019organisation candidate d\xE9clare avoir impl\xE9ment\xE9\
+        \ des mesures techniques et organisationnelles pour assurer le respect de\
+        \ la r\xE9glementation en mati\xE8re de protection des donn\xE9es qui lui\
+        \ est applicable (voir annexe 1)"
+    - urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:og.pt
+      assessable: false
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:og
+      ref_id: OG.PT
+      name: Prestataires tiers
+    - urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:og.pt-1
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:og.pt
+      ref_id: OG.PT-1
+      description: "Lorsque l\u2019accomplissement de certaines exigences d\xE9pend\
+        \ d\u2019un ou plusieurs sous-traitants, l\u2019organisation candidate exige\
+        \ un engagement sur la mise en \u0153uvre de mesures de s\xE9curit\xE9, par\
+        \ exemple par un label ou une certification ou un engagement contractuel au\
+        \ moins \xE9quivalent aux exigences du Label Cyber-Safe."
+    - urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:og.rh
+      assessable: false
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:og
+      ref_id: OG.RH
+      name: 'Ressources humaines '
+    - urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:og.rh-1
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:og.rh
+      ref_id: OG.RH-1
+      description: "L\u2019organisation candidate doit maintenir \xE0 jour une liste\
+        \ des permissions d\u2019acc\xE8s pour toutes les cat\xE9gories de donn\xE9\
+        es et tous les types de collaborateurs (plan de droit)."
+    - urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:og.rh-2
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:og.rh
+      ref_id: OG.RH-2
+      description: "L\u2019organisation candidate doit contr\xF4ler au moins une fois\
+        \ par ann\xE9e que la liste des permissions d\u2019acc\xE8s correspond aux\
+        \ droits effectivement attribu\xE9s. La liste \xE0 jour est sign\xE9e par\
+        \ la personne responsable de la cybers\xE9curit\xE9."
+    - urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:og.rh-3
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:og.rh
+      ref_id: OG.RH-3
+      description: "Aucun collaborateur ne doit disposer d\u2019un acc\xE8s administrateur\
+        \ sur son poste local, hormis le personnel de l\u2019informatique."
+    - urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:og.rh-4
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:og.rh
+      ref_id: OG.RH-4
+      description: " L\u2019organisation candidate a fait signer \xE0 chaque collaborateur\
+        \ un document d\xE9finissant leurs droits et devoirs vis-\xE0-vis des ressources\n\
+        informatiques. Lorsque l'utilisation d'un \xE9quipement priv\xE9 est autoris\xE9\
+        e (non recommand\xE9 par le Label), l'organisation candidate inclut les exigences\
+        \ correspondantes dans le document sur les droits et devoirs (installation\
+        \ de correctifs de s\xE9curit\xE9, pare-feu, mise \xE0 jour du logiciel anti-virus\
+        \ et lancement d'alertes, respect des droits de propri\xE9t\xE9 intellectuelle).\
+        \ L'utilisation pr\xE9vue des t\xE9l\xE9phones portables priv\xE9s, du courrier\
+        \ \xE9lectronique professionnel et de l'internet est pr\xE9cis\xE9e."
+    - urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:og.rh-5
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:og.rh
+      ref_id: OG.RH-5
+      description: " L\u2019organisation candidate dispose d\u2019une politique de\
+        \ s\xE9curit\xE9 des syst\xE8mes d\u2019information."
+    - urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:og.rh-6
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:og.rh
+      ref_id: OG.RH-6
+      description: "Pour les PME: Une s\xE9ance de pr\xE9sentation des r\xE9sultats\
+        \ de la campagne de phishing a eu lieu et les bonnes pratiques y ont \xE9\
+        t\xE9  pr\xE9sent\xE9es, un PV est disponible. Il est en outre fortement recommand\xE9\
+        \ que tous les employ\xE9s aient suivi une formation de sensibilisation \xE0\
+        \ la cybers\xE9curit\xE9."
+    - urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:og.rh-7
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:og.rh
+      ref_id: OG.RH-7
+      description: "Pour les communes et administrations publiques: tous les employ\xE9\
+        s ont suivi le e-Learning sur la s\xE9curit\xE9 de l\u2019information et la\
+        \ cybers\xE9curit\xE9 (e-Learning d\xE9velopp\xE9 sur mandat de la CCDJP).\u200D"
+    - urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:og.pr
+      assessable: false
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:og
+      ref_id: OG.PR
+      name: "Proc\xE9dures, Routines"
+    - urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:og.pr-1
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:og.pr
+      ref_id: OG.PR-1
+      description: "Les mises \xE0 jour des syst\xE8mes d\u2019exploitation des p\xE9\
+        riph\xE9riques et serveurs sont appliqu\xE9es et contr\xF4l\xE9es r\xE9guli\xE8\
+        rement."
+    - urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:og.pr-2
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:og.pr
+      ref_id: OG.PR-2
+      description: "Les mises \xE0 jour des logiciels, hors logiciels m\xE9tiers,\
+        \ des p\xE9riph\xE9riques et serveurs sont appliqu\xE9es et contr\xF4l\xE9\
+        es r\xE9guli\xE8rement."
+    - urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:og.pr-3
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:og.pr
+      ref_id: OG.PR-3
+      description: "Les mises \xE0 jour des firmwares (micrologiciels) sont appliqu\xE9\
+        es et contr\xF4l\xE9es r\xE9guli\xE8rement (switch, imprimantes, t\xE9l\xE9\
+        phones-IP, etc.)"
+    - urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:og.pr-4
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:og.pr
+      ref_id: OG.PR-4
+      description: "La pr\xE9sence et la mise \xE0 jour d\u2019un antivirus sur tous\
+        \ les p\xE9riph\xE9riques sont contr\xF4l\xE9es r\xE9guli\xE8rement."
+    - urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:og.pr-5
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:og.pr
+      ref_id: OG.PR-5
+      description: "Les alertes de s\xE9curit\xE9 sont centralis\xE9es et trait\xE9\
+        es r\xE9guli\xE8rement."
+    - urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:og.pr-6
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:og.pr
+      ref_id: OG.PR-6
+      description: "Un pare-feu est pr\xE9sent entre le r\xE9seau de travail et l\u2019\
+        ext\xE9rieur."
+    - urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:og.pr-7
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:og.pr
+      ref_id: OG.PR-7
+      description: "Le fonctionnement, la configuration et la mise \xE0 jour du pare-feu\
+        \ sont v\xE9rifi\xE9s r\xE9guli\xE8rement."
+    - urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:og.pr-8
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:og.pr
+      ref_id: OG.PR-8
+      description: "Toutes les macros sont d\xE9sactiv\xE9es par d\xE9faut dans les\
+        \ logiciels de bureautique ou ont un acc\xE8s restreint.\u200D"
+    - urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:og.pr-9
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:og.pr
+      ref_id: OG.PR-9
+      description: "Le filtrage (anti-spam) et l'anti-spoofing (SPF et DKIM) doivent\
+        \ \xEAtre activ\xE9s pour toutes les adresses \xE9lectroniques.\u200D"
+    - urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:og.sg
+      assessable: false
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:og
+      ref_id: OG.SG
+      name: Sauvegardes
+    - urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:og.sg-1
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:og.sg
+      ref_id: OG.SG-1
+      description: "L\u2019organisation candidate doit avoir mis en place un syst\xE8\
+        me de sauvegarde des donn\xE9es et du syst\xE8me."
+    - urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:og.sg-2
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:og.sg
+      ref_id: OG.SG-2
+      description: "L\u2019intervalle de sauvegarde des donn\xE9es est d\u2019au moins\
+        \ une fois par jour."
+    - urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:og.sg-3
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:og.sg
+      ref_id: OG.SG-3
+      description: "L\u2019intervalle de la sauvegarde syst\xE8me est d'au moins une\
+        \ fois par mois."
+    - urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:og.sg-4
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:og.sg
+      ref_id: OG.SG-4
+      description: "Nb. Periph 100: L\u2019intervalle de la sauvegarde syst\xE8me\
+        \ est d'au moins une fois par semaine."
+    - urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:og.sg-5
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:og.sg
+      ref_id: OG.SG-5
+      description: " L\u2019organisation candidate doit pouvoir restaurer l\u2019\xE9\
+        tat de son syst\xE8me et de ses donn\xE9es \xE0 l\u2019\xE9tat d\u2019il y\
+        \ a 3 mois."
+    - urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:og.sg-6
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:og.sg
+      ref_id: OG.SG-6
+      description: "Cat. 5 - Nb. Periph 200: L\u2019organisation candidate doit pouvoir\
+        \ restaurer l\u2019\xE9tat de son syst\xE8me et de ses donn\xE9es \xE0 l\u2019\
+        \xE9tat d\u2019il y a 6 mois. "
+    - urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:og.sg-7
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:og.sg
+      ref_id: OG.SG-7
+      description: "Le bon fonctionnement de la sauvegarde des donn\xE9es est contr\xF4\
+        l\xE9 au moins une fois par semaine."
+    - urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:og.sg-8
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:og.sg
+      ref_id: OG.SG-8
+      description: "Le bon fonctionnement de la sauvegarde syst\xE8me est v\xE9rifi\xE9\
+        \ au moins tous les trois mois."
+    - urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:og.sg-9
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:og.sg
+      ref_id: OG.SG-9
+      description: "Une copie des donn\xE9es existe dans un second emplacement physiquement\
+        \ distinct (hors feu, hors eau)."
+    - urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:og.sg-10
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:og.sg
+      ref_id: OG.SG-10
+      description: "Cat. 4 - Nb. Periph 100: Il n\u2019est pas possible pour un seul\
+        \ compte (y.c. un administrateur) de d\xE9truire toutes les sauvegardes."
+    - urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:og.sg-11
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:og.sg
+      ref_id: OG.SG-11
+      description: "Un test de r\xE9cup\xE9ration des donn\xE9es sauvegard\xE9es les\
+        \ plus r\xE9centes et les plus anciennes doit \xEAtre effectu\xE9 au minimum\
+        \ annuellement."
+    - urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:og.rs
+      assessable: false
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:og
+      ref_id: OG.RS
+      name: "R\xE9silience"
+    - urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:og.rs-1
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:og.rs
+      ref_id: OG.RS-1
+      description: " Il existe un plan et des proc\xE9dure de reprise en cas d'interruption\
+        \ de la production informatique."
+    - urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:og.rs-2
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:og.rs
+      ref_id: OG.RS-2
+      description: "Cat. 4 : Les proc\xE9dures de reprises sont simul\xE9es au moins\
+        \ une fois par an avec les parties prenantes pertinentes."
+    - urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:og.rs-3
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:og.rs
+      ref_id: OG.RS-3
+      description: "L'organisation candidate a rempli et sign\xE9 la liste de contr\xF4\
+        le \"R\xE9silience\"."
+    - urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:og.mp
+      assessable: false
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:og
+      ref_id: OG.MP
+      name: Mots de passe
+    - urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:og.mp-desc-1
+      assessable: false
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:og.mp
+      ref_id: OG.MP-desc-1
+      description: "Les politiques de mot de passe doivent \xEAtre impl\xE9ment\xE9\
+        es de mani\xE8re \xE0 obliger chaque collaborateur \xE0 les respecter."
+    - urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:og.mp-1
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:og.mp
+      ref_id: OG.MP-1
+      description: "Une politique de mots de passe forts doit \xEAtre d\xE9finie et\
+        \ appliqu\xE9e (12 caract\xE8res au minimum, dont des majuscules, minuscules,\
+        \ chiffres et caract\xE8res sp\xE9ciaux)."
+    - urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:og.mp-2
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:CH-Cyber-Safe:og.mp
+      ref_id: OG.MP-2
+      description: "L\u2018organisation candidate doit prot\xE9ger ses mots de passe\
+        \ contre les acc\xE8s non-autoris\xE9s et ne doit pas stocker des mots de\
+        \ passe non chiffr\xE9s sur ses syst\xE8mes IT, \xE9quipements ou tout autre\
+        \ support (p.ex. post-it). D\xE8s qu\u2019un utilisateur doit utiliser plus\
+        \ d\u2019une dizaine de mots de passe, il est fortement  recommand\xE9 d\u2019\
+        utiliser un gestionnaire de mots de passe."
